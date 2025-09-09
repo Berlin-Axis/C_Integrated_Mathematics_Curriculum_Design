@@ -10,7 +10,7 @@ double plane[4] = {1,1,1,0}; // 平面参数
 double dis(double E[3]) // 计算空间上一点到平面的距离
 {
     double nu,de;
-    nu = fabs(plane[0] * P[0] + plane[1] * P[1] + plane[2] * P[2] + plane[3]);
+    nu = fabs(plane[0] * E[0] + plane[1] * E[1] + plane[2] * E[2] + plane[3]);
     de = sqrt(pow(plane[0],2) + pow(plane[1],2) + pow(plane[2],2));
     return nu/de;
 }
