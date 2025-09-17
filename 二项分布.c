@@ -25,7 +25,7 @@ int main() {
                     continue_games++;
                 }
             }
-            games += continue_games; // 总局数 = 前5局 + 后续局数
+            games += (continue_games + 1); // 总局数 = 前5局 + 后续局数
         }
 
         total_games += games; // 累加本次试验的总局数
